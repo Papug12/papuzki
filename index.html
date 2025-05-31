@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<title>Papużki - moja strona!</title>
+<style>
+  body {
+    background-color: black;
+    color: lime;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  #surprise {
+    margin-top: 30px;
+    font-size: 2em;
+    color: yellow;
+  }
+</style>
+</head>
+<body>
+<h1>Witaj na stronie Papużki!</h1>
+<p id="surprise">Kliknij tutaj, żeby zobaczyć niespodziankę!</p>
+
+<script>
+  document.getElementById('surprise').onclick = function() {
+    alert('Hej! Fajnie, że jesteś na mojej stronie! 🎉');
+    document.body.style.backgroundColor = 'purple';
+    this.style.color = 'orange';
+  };
+</script>
+</body>
+</html>
